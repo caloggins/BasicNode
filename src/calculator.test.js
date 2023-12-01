@@ -1,4 +1,4 @@
-import add from './main'
+import add from './calculator'
 
 describe('add when', () => {
   it('string is empty', () => {
@@ -11,5 +11,13 @@ describe('add when', () => {
 
   it('string has 2 numbers', () => {
     expect(add('1,2')).toBe(3)
+  })
+
+  it('string has different delimeter', () => {
+    expect(add('1\n2,3')).toBe(6)
+  })
+
+  it('string has custom separator', () => {
+    expect(add('//;\n1;2')).toBe(3)
   })
 })

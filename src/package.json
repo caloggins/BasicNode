@@ -17,7 +17,7 @@
     "parser": "babel-eslint"
   },
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watch"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.23.3",
